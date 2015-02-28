@@ -1,0 +1,137 @@
+$L: 975px;
+$M: 675px;
+$S: 320px;
+$SHORT: 480px;
+
+$smallUnitSize: 5px;
+$unitSize: 25px;
+$columnWidth: 75px;
+$gutterWidth: 25px;
+
+body {
+	margin: 0;
+	padding: 0;
+}
+body > .ui {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#view {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+    background-color: transparent;
+    transition: opacity 2s ease-in, top 0.5s ease-in, left 0.5s ease-in;
+}
+#view {
+	z-index: 1;	
+}
+.screen {
+	background: white;
+	width: 100%;
+	height: 100%;
+	padding-top: 75px;
+}
+
+
+//////////////
+
+
+.ui > header, section > header {
+	height: 80px;
+	position: relative;
+	padding: 0 0 0 15px;
+	border: solid 10px #A8A6A7;
+	border-width: 10px 0;
+	background: #EBEBEB;
+	.bar {
+		background: rgba(0,0,0,0);
+		position: absolute;
+		bottom: 0;
+		z-index: 0;
+		overflow: hidden;
+		height: 48px;
+		width: 875px;
+		transition: all 0.2s ease-out;
+	}
+	//test
+	&:hover {
+		.bar {
+			width: 100%;
+			height: 83px;
+			//background: rgba(256,256,256,1);
+		}
+	}
+	.name {
+		display: block;
+		z-index: 1;
+		position: relative;
+	}
+}
+
+.ui > header {
+	.name {
+		word-spacing: -3px;
+	}
+}
+section > header {
+	height: 60px;
+	.name {
+		
+	}
+}
+
+
+
+.container {
+	@include clearfix;
+	padding: 0 0 0 15px;
+	width: 100%;
+}
+
+/*
+section > header {
+	border: solid 10px #A8A6A7;
+	border-width: 10px 0;
+	padding: 0 0 0 15px;
+	max-height: 60px;
+	outline: solid 1px red;
+	position: relative;
+	z-index: 1;
+	.bar {
+		background: rgba(0,0,0,0);
+		position: absolute;
+		bottom: 0;
+		z-index: 0;
+		overflow: hidden;
+		height: 48px;
+		width: 875px;
+		transition: all 0.2s ease-out;
+	}
+	
+}
+*/
+
+
+
+
+@media all and (min-width: $S) {
+    
+    body {
+        //background-color: yellow;
+    }
+
+}
+
+@media all and (min-width: $M) {
+
+}
+
+
+@media all and (min-width: $L) {
+   
+ 
+}

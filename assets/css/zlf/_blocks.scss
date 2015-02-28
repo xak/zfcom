@@ -1,0 +1,45 @@
+
+
+.block {
+width: 100%;
+//	width: 275px;
+//	background: blue;
+//	color: white;
+ //   min-height: 75px;
+//	position: absolute;
+//	width: 100%;
+//	left: 0;
+
+}
+.flex {
+    width: 100%;
+}
+
+
+.block {
+//	min-height: 33%;
+//	margin-bottom: 25px;
+//    transition: opacity 2s ease-in, top 0.5s ease-in, left 0.5s ease-in;
+  transition: opacity 0.2s ease-in, left 0.2s ease-out, top 0.2s ease-in, height 0.3s ease-in;
+}
+
+/*
+
+.block header {
+	color: yellow;
+	h1 {
+		font-size: 40px/50px;
+	}
+	border-bottom: solid 1px white;
+	
+}
+
+*/
+
+
+@media all and (min-width: $M) {
+    .block {
+        float: left;
+    }    
+
+}

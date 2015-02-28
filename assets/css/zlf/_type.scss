@@ -1,0 +1,60 @@
+$fontFamilyStack: 'Helvetica Neue',Arial,sans-serif;
+$baseFontSize: 15px;
+//$baseLineHeight: 25px / 15px;
+
+$largeFontSize: 48px;
+$smallFontSize: 12.5px;
+$h1FontSize: 40px;
+$h2FontSize: 30px;
+$h3FontSize: 25px;
+$h4FontSize: 15px;
+$h5FontSize: 15px;
+$h6FontSize: 15px;
+
+$baseFontColor: #222;
+
+body {
+	color: $baseFontColor;
+	font-size: $baseFontSize;
+	font-family: $fontFamilyStack;
+	background-image: url('/assets/images/5-grid.png');
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+	line-height: 1;
+}
+p {
+	font-size: $baseFontSize;
+	line-height: 20px;
+	margin: 0 0 20px;
+}
+h1 {
+	font-size: $h1FontSize;
+	line-height: 45px;
+	margin: 0 0 15px;
+}
+h2 {
+	font-size: $h2FontSize;
+	line-height: 35px;
+	margin: 0 0 10px;
+}
+h3 {
+	font-size: $h3FontSize;
+	line-height: 30px;
+	margin: 0 0 10px;
+}
+h4,h5,h6 {
+	font-size: $h4FontSize;
+	line-height: 20px;
+	margin: 0 0 10px;
+}
+header address.name {
+	font-size: $largeFontSize;
+	line-height: 60px;
+	font-style: normal;
+	font-weight: 700;
+}
+
+
+
+
